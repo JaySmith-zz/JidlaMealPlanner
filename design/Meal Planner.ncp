@@ -1,0 +1,216 @@
+<Project>
+  <Name>Jidla</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>v1.0</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Meal</Name>
+        <Access>Public</Access>
+        <Location left="302" top="54" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public int Title { get; set; }</Member>
+        <Member type="Property">public int Status { get; set; }</Member>
+        <Member type="Property">public List&lt;Recipe&gt; Recipes { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Recipe</Name>
+        <Access>Public</Access>
+        <Location left="621" top="100" />
+        <Size width="299" height="330" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public string Name { get; set; }</Member>
+        <Member type="Property">public List&lt;Ingredient&gt; Ingredients { get; set; }</Member>
+        <Member type="Property">public List&lt;PreperationStep&gt; PreperationSteps { get; set; }</Member>
+        <Member type="Property">public int PreperationTime { get; set; }</Member>
+        <Member type="Property">public int CookTime { get; set; }</Member>
+        <Member type="Property">public int ReadIn { get; set; }</Member>
+        <Member type="Property">public int ServingSize { get; set; }</Member>
+        <Member type="Property">public string Notes { get; set; }</Member>
+        <Member type="Property">public int Calories { get; set; }</Member>
+        <Member type="Property">public string Category { get; set; }</Member>
+        <Member type="Property">public List&lt;Tag&gt; Tags { get; set; }</Member>
+        <Member type="Property">public int Rating { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RecipeIngredient</Name>
+        <Access>Public</Access>
+        <Location left="997" top="76" />
+        <Size width="172" height="166" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public int IngredientId { get; set; }</Member>
+        <Member type="Property">public string Amount { get; set; }</Member>
+        <Member type="Property">public string Unit { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Categories
+
+Appetizer
+Breakfast/Brunch
+Dessert
+Main Dish
+Dessert</Text>
+        <Location left="770" top="445" />
+        <Size width="160" height="152" />
+      </Entity>
+      <Entity type="Class">
+        <Name>PreperationSteps</Name>
+        <Access>Public</Access>
+        <Location left="1026" top="303" />
+        <Size width="162" height="139" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public int StepNumber { get; set; }</Member>
+        <Member type="Property">public string Description { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Ingredient</Name>
+        <Access>Public</Access>
+        <Location left="1326" top="100" />
+        <Size width="162" height="141" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public int Name { get; set; }</Member>
+        <Member type="Property">public bool InPantry { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MealPlan</Name>
+        <Access>Public</Access>
+        <Location left="54" top="73" />
+        <Size width="178" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public Date Date { get; set; }</Member>
+        <Member type="Property">public int BreakfastMealId { get; set; }</Member>
+        <Member type="Property">public int LunchMealId { get; set; }</Member>
+        <Member type="Property">public int DinnerMealId { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MealPlanMeal</Name>
+        <Access>Public</Access>
+        <Location left="199" top="497" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int MealPlanId { get; set; }</Member>
+        <Member type="Property">public int RecipeId { get; set; }</Member>
+        <Member type="Property">public int MealCategoryId { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MealCategory</Name>
+        <Access>Public</Access>
+        <Location left="525" top="564" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int Id { get; set; }</Member>
+        <Member type="Property">public string CategoryName { get; set; }</Member>
+        <Member type="Property">public string Status { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>945</X>
+          <Y>209</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>945</X>
+          <Y>230</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>953</X>
+          <Y>384</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>386</X>
+          <Y>613</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>174</X>
+          <Y>576</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>596</X>
+          <Y>179</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>401</X>
+          <Y>587</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
