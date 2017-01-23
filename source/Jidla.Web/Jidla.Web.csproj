@@ -342,6 +342,7 @@
     <Content Include="Views\Recipe\Edit.cshtml" />
     <Content Include="Views\Meal\Index.cshtml" />
     <Content Include="Views\Meal\Create.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\RecipeViewModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewScripts\" />

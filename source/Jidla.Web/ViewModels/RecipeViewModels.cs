@@ -4,6 +4,7 @@ namespace Jidla.Web.ViewModels
 {
     public class RecipeViewModel
     {
+        public bool IsSelected { get; set; }
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

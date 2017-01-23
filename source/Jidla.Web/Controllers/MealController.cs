@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using AutoMapper;
 using Jidla.Web.Data;
@@ -29,9 +30,21 @@ namespace Jidla.Web.Controllers
         {
             var model = new MealViewModel();
             var availableRecipes = _repository.Find(new RecipesByUserNameQuery(User.Identity.Name));
-            model.AvailableRecipes = Mapper.Map<IEnumerable<Recipe>, IEnumerable<SelectListItem>>(availableRecipes);
+            model.AvailableRecipes = Mapper.Map<IEnumerable<Recipe>, IEnumerable<RecipeViewModel>>(availableRecipes);
 
             return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Create(MealViewModel model)
+        {
+            return RedirectToAction("Index");
+        }
+
+        public IEnumerable<int> getSelectedIds(MealViewModel model)
+        {
+            // Return an Enumerable containing the Id's of the selected people:
+            return (from p in model.AvailableRecipes where p.IsSelected select p.Id).ToList();
         }
     }
 }

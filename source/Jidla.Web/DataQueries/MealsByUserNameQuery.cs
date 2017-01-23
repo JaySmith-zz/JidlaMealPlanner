@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using AutoMapper.QueryableExtensions;
 using Jidla.Web.Data;
 using Magrathea;
 

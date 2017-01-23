@@ -7,7 +7,7 @@ namespace Jidla.Web.ViewModels
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public IEnumerable<SelectListItem> AvailableRecipes { get; set; }
-        public IEnumerable<SelectListItem> SelectedRecipes { get; set; }
+        public IEnumerable<RecipeViewModel> AvailableRecipes { get; set; }
+        
     }
 }
