@@ -2,7 +2,7 @@
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using Jidla.Web.Data;
+using Jidla.Infrastructure.Data;
 using Magrathea;
 using Magrathea.Interfaces;
 

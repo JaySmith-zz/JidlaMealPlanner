@@ -1,4 +1,4 @@
-﻿using Jidla.Web.Data;
+﻿using Jidla.Data;
 
 namespace Jidla.Web.ViewModels
 {

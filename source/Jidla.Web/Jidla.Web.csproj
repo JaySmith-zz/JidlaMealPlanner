@@ -244,15 +244,6 @@
     <Compile Include="Controllers\MealPlannerController.cs" />
     <Compile Include="Controllers\RecipeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="DataQueries\MealsByUserNameQuery.cs" />
-    <Compile Include="DataQueries\RecipesByUserNameQuery.cs" />
-    <Compile Include="DataQueries\RecipeAllQuery.cs" />
-    <Compile Include="DataQueries\RecipeByIdQuery.cs" />
-    <Compile Include="Data\JidlaContext.cs" />
-    <Compile Include="Data\Meal.cs" />
-    <Compile Include="Data\MealPlan.cs" />
-    <Compile Include="Data\PreperationStep.cs" />
-    <Compile Include="Data\Recipe.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -360,6 +351,16 @@
     <EmbeddedResource Include="Migrations\201611081526493_Meal.resx">
       <DependentUpon>201611081526493_Meal.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jidla.Infrastructure\Jidla.Infrastructure.csproj">
+      <Project>{91441F78-033C-4851-983D-034BAD990446}</Project>
+      <Name>Jidla.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jidla\Jidla.csproj">
+      <Project>{c4df6b11-21cc-40ab-b6c2-b38d5c4853aa}</Project>
+      <Name>Jidla</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

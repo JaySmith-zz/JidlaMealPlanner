@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Security.Permissions;
 
-namespace Jidla.Web.Data
+namespace Jidla.Data
 {
     public class PreperationStep
     {

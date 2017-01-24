@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jidla.Web", "Jidla.Web\Jidla.Web.csproj", "{5886A882-4FFC-4FC2-B64A-1C71E9FE1408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jidla", "Jidla\Jidla.csproj", "{C4DF6B11-21CC-40AB-B6C2-B38D5C4853AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jidla.Infrastructure", "Jidla.Infrastructure\Jidla.Infrastructure.csproj", "{91441F78-033C-4851-983D-034BAD990446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5886A882-4FFC-4FC2-B64A-1C71E9FE1408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5886A882-4FFC-4FC2-B64A-1C71E9FE1408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5886A882-4FFC-4FC2-B64A-1C71E9FE1408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DF6B11-21CC-40AB-B6C2-B38D5C4853AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DF6B11-21CC-40AB-B6C2-B38D5C4853AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DF6B11-21CC-40AB-B6C2-B38D5C4853AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DF6B11-21CC-40AB-B6C2-B38D5C4853AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91441F78-033C-4851-983D-034BAD990446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91441F78-033C-4851-983D-034BAD990446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91441F78-033C-4851-983D-034BAD990446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91441F78-033C-4851-983D-034BAD990446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

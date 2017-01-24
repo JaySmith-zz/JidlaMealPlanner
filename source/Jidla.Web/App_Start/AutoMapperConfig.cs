@@ -1,5 +1,5 @@
 ﻿using System.Web.Mvc;
-using Jidla.Web.Data;
+using Jidla.Data;
 using Jidla.Web.ViewModels;
 
 namespace Jidla.Web

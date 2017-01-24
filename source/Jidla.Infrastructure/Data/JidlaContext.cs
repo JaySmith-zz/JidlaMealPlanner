@@ -1,7 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using Jidla.Data;
 
-namespace Jidla.Web.Data
+namespace Jidla.Infrastructure.Data
 {
     public class JidlaContext : DbContext
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Jidla.Web.Data
+namespace Jidla.Data
 {
     public enum MealStatus
     {

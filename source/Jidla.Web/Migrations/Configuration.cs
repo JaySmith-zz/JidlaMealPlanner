@@ -1,11 +1,10 @@
+using Jidla.Infrastructure.Data;
+
 namespace Jidla.Web.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Jidla.Web.Data.JidlaContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<JidlaContext>
     {
         public Configuration()
         {
@@ -13,7 +12,7 @@ namespace Jidla.Web.Migrations
             ContextKey = "Jidla.Web.Data.JidlaContext";
         }
 
-        protected override void Seed(Jidla.Web.Data.JidlaContext context)
+        protected override void Seed(JidlaContext context)
         {
             //  This method will be called after migrating to the latest version.
 

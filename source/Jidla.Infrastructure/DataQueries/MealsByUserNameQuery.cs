@@ -1,9 +1,8 @@
 ﻿using System.Linq;
-using AutoMapper.QueryableExtensions;
-using Jidla.Web.Data;
+using Jidla.Data;
 using Magrathea;
 
-namespace Jidla.Web.DataQueries
+namespace Jidla.Infrastructure.DataQueries
 {
     public class MealsByUserNameQuery : Query<Meal>
     {

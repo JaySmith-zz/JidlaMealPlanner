@@ -1,8 +1,7 @@
-﻿using System.Linq;
-using Jidla.Web.Data;
+﻿using Jidla.Data;
 using Magrathea;
 
-namespace Jidla.Web.DataQueries
+namespace Jidla.Infrastructure.DataQueries
 {
     public class RecipeAllQuery : Query<Recipe>
     {

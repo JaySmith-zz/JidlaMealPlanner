@@ -2,8 +2,8 @@
 using System.Linq;
 using System.Web.Mvc;
 using AutoMapper;
-using Jidla.Web.Data;
-using Jidla.Web.DataQueries;
+using Jidla.Data;
+using Jidla.Infrastructure.DataQueries;
 using Jidla.Web.ViewModels;
 using Magrathea.Interfaces;
 
