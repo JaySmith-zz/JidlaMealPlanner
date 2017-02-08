@@ -18,6 +18,7 @@ namespace Jidla.Data
         public RecipeStatus Status { get; set; }
         public int PrepTimeInMinutes { get; set; }
         public int CookTimeInMinutes { get; set; }
+        public int ReadyInMinutes { get; set; }
         public int ServingSize { get; set; }
         public string PhotoUri { get; set; }
         public string Ingredients { get; set; }
